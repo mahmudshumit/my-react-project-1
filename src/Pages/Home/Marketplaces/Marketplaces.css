@@ -1,0 +1,25 @@
+ .matketplaces-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+   
+    
+    
+}
+.marketplaces-title{
+    text-align: center;
+} 
+
+
+/* make services responsive */
+@media only screen and (max-width:576px) {
+    .matketplaces-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .matketplaces-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

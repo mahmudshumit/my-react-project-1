@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Monkey Pro",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/xsHhTRV/card1-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Catto",
+        "price": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/dGqDZPd/card1-6.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Mask Ninja",
+        "price": "150",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/X7fnsby/anime.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Confusion Fusion",
+        "price": "180",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/Tq2n6hs/img-09.jpg"
+        
+    },
+    {
+        "id": 5,
+        "name": "Music Panda",
+        "price": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/6sjk2ZK/music.jpg"
+    },
+    {
+        "id": 6,
+        "name": "RoboCow",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/cwvYw1f/img-08.jpg"
+    }
+]
