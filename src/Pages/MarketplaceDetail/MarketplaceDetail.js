@@ -1,5 +1,6 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import { Link, useParams } from 'react-router-dom';
 
 const MarketplaceDetail = () => {
     const{marketplaceId}=useParams();
@@ -8,6 +9,11 @@ const MarketplaceDetail = () => {
     return (
         <div>
             <h1>welcome to detail page:{marketplaceId}</h1>
+           <div className='text-center'>
+           <Link to="/checkout">
+           <Button variant="outline-primary">Checkout</Button>
+            </Link>
+           </div>
         </div>
     );
 }

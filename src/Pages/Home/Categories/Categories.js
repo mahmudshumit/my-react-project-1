@@ -1,7 +1,7 @@
 import React from 'react';
 
-import card1 from '../../../images/img-03.jpg';
-import card2 from '../../../images/img-02.jpg';
+import card1 from '../../../images/hero.jpg';
+import card2 from '../../../images/1.jpg';
 import card3 from '../../../images/card-3.jpg';
 import card4 from '../../../images/card-4.jpg';
 import card5 from '../../../images/card-5.jpg';
@@ -11,14 +11,14 @@ import Category from '../Category/Category';
 const categories =[
 
 
-    {id:1,name:'Animal',img:card1},
-    {id:2,name:'Universe',img:card2},
-    {id:3,name:'Anime',img:card3},
-    {id:4,name:'Space',img:card4},
-    {id:5,name:'Magic',img:card5},
-    {id:6,name:'Sports',img:card6}
+    {id:1,name:'Space',image:card4},
+    {id:2,name:'Magic-Cartoon',image:card5},
+    {id:3,name:'Sports',image:card6},
+    {id:4,name:'Art',image:card1},
+    {id:5,name:'MetaVerse',image:card2},
+    {id:6,name:'Anime',image:card3},
     
-]
+];
 
 
 const Categories = () => {

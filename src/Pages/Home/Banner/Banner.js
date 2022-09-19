@@ -48,6 +48,7 @@ const Banner = () => {
           <h1>Explore, collect, and sell NFTs</h1>
           </Carousel.Caption>
         </Carousel.Item>
+        
       </Carousel>
     );
 }
