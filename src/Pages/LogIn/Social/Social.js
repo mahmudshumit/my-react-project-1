@@ -59,11 +59,11 @@ if(user || gituser||fuser){
                     </Button>
                     <Button onClick={() => signInWithFacebook()}  variant="outline-primary w-70 d-block mx-auto my-3">
             <img style={{ width: '20px' }} src={flogo} alt="" />
-                    <span className='px-2'>Google Sign In</span>
+                    <span className='px-2'>Facebook Sign In</span>
                     </Button>
                     <Button  onClick={() => signInWithGithub()} variant="outline-dark w-70 d-block mx-auto my-3">
             <img style={{ width: '20px' }} src={gitlogo} alt="" />
-                    <span className='px-2'>Google Sign In</span>
+                    <span className='px-2'>Github Sign In</span>
                     </Button>
         </div>
     );

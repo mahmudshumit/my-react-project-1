@@ -10,6 +10,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Social from '../Social/Social';
 import Loading from '../../Shared/Loading/Loading';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 
 const Register = () => {
@@ -68,6 +69,7 @@ const Register = () => {
 
     return (
         <div className='register-form'>
+             <PageTitle title="Register"></PageTitle>
         <h2 className='title'>Register Here</h2>
         <form onSubmit={handleRegister}>
             <input type="text" name="name" id="" placeholder='Enter Your Name' />

@@ -8,6 +8,7 @@ import Loading from '../../Shared/Loading/Loading';
 import Social from '../Social/Social';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 const LogIn = () => {
     const emailRef=useRef('');
     const passwordRef=useRef('');
@@ -90,6 +91,7 @@ const resetPassword= async()=>{
 
     return (
         <div className='container w-25 mx-auto'>
+           <PageTitle title="LogIn"></PageTitle>
             <h2 className='text-center mt-3 mb-4'>Please Log In</h2>
             <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-4" controlId="formBasicEmail">
