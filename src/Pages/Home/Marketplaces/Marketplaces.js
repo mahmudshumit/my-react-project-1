@@ -8,7 +8,7 @@ const Marketplaces = () => {
 const [marketplaces,setMarketplaces]= useState([]);
 useEffect(()=>{
 
-fetch('Marketplace.json')
+fetch('http://localhost:5000/marketplace')
 .then(res=>res.json())
 .then(data=>setMarketplaces(data));
 
@@ -27,7 +27,7 @@ fetch('Marketplace.json')
 {
        
        marketplaces.map(marketplace=><Marketplace
-        key={marketplace.id}
+        key={marketplace._id}
         marketplace={marketplace}
        >
        </Marketplace>)

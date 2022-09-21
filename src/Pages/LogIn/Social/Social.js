@@ -54,7 +54,7 @@ if(user || gituser||fuser){
             </div>
             {errorSocial}
             <Button onClick={() => signInWithGoogle()}  variant="outline-warning w-70 d-block mx-auto my-3">
-            <img style={{ width: '20px' }} src={glogo} alt="" />
+            <img style={{ width: '30px' }} src={glogo} alt="" />
                     <span className='px-2'>Google Sign In</span>
                     </Button>
                     <Button onClick={() => signInWithFacebook()}  variant="outline-primary w-70 d-block mx-auto my-3">
@@ -62,7 +62,7 @@ if(user || gituser||fuser){
                     <span className='px-2'>Facebook Sign In</span>
                     </Button>
                     <Button  onClick={() => signInWithGithub()} variant="outline-dark w-70 d-block mx-auto my-3">
-            <img style={{ width: '20px' }} src={gitlogo} alt="" />
+            <img style={{ width: '35px' }} src={gitlogo} alt="" />
                     <span className='px-2'>Github Sign In</span>
                     </Button>
         </div>

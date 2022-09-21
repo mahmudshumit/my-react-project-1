@@ -4,7 +4,7 @@ import './Marketplace.css';
 
 const Marketplace = ({marketplace}) => {
 
-    const {id,name,img,description,price}=marketplace;
+    const {_id,name,img,description,price}=marketplace;
     const navigate=useNavigate();
     const navigateTomarketplaceDetail=id=>{
 
@@ -17,7 +17,7 @@ const Marketplace = ({marketplace}) => {
               <h2>{name}</h2>  
               <p>Price:${price}</p>  
               <p><small>{description}</small></p>
-              <button onClick={()=>navigateTomarketplaceDetail(id)} className="btn btn-primary">Buy Now</button>
+              <button onClick={()=>navigateTomarketplaceDetail(_id)} className="btn btn-primary">Buy Now</button>
 
 
         </div>

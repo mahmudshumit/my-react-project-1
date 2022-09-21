@@ -11,6 +11,8 @@ import LogIn from "./Pages/LogIn/LogIn/LogIn";
 import Register from "./Pages/LogIn/Register/Register";
 import Checkout from "./Pages/Checkout/Checkout/Checkout";
 import RequireAuth from "./Pages/LogIn/RequireAuth/RequireAuth";
+import AddMarketplace from "./Pages/AddMarketplace/AddMarketplace";
+import ManageMarketplace from "./Pages/ManageMarketplace/ManageMarketplace";
 
 function App() {
   return (
@@ -29,6 +31,16 @@ function App() {
         <Route path="/checkout" element={
           <RequireAuth>
             <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
+         <Route path="/addmarketplace" element={
+          <RequireAuth>
+            <AddMarketplace></AddMarketplace>
+          </RequireAuth>
+        }></Route>
+         <Route path="/manage" element={
+          <RequireAuth>
+            <ManageMarketplace></ManageMarketplace>
           </RequireAuth>
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
