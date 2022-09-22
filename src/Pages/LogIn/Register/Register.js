@@ -55,9 +55,10 @@ const Register = () => {
     const name=event.target.name.value;
     const email=event.target.email.value;
     const password=event.target.password.value;
+
     // const agree= event.target.terms.checked;
 
-
+    
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName:name });
     console.log('Updated profile');
@@ -77,7 +78,7 @@ const Register = () => {
             <input type="email" name="email" id="" placeholder='Email Address' required />
 
             <input type="password" name="password" id="" placeholder='Password' required />
-            <input type="password" name="confirm-password" id="" placeholder='Confirm your Password' required />
+          
             <input onClick={()=>setAgree(!agree)} type="checkbox" name="terms" id="terms" />
             
             <label className={agree? 'ps-2 text-primary': 'ps-2 text-danger'} htmlFor="terms">Agree Our Terms and Conditions</label>

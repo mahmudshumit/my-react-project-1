@@ -1,13 +1,31 @@
-import React from 'react';
+import { async } from '@firebase/util';
+import React, { useState } from 'react';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 
 
 const About = () => {
+    const [walletAddress, setwalletAddress] = useState(null);
+
+    const connectWallet=async()=>{
+        if (typeof window.ethereum !== 'undefined') {
+          const accounts= await  window.ethereum.request({ method: 'eth_requestAccounts' });
+             setwalletAddress(accounts[0])
+          }
+    }
     return (
-        <div>
-           <PageTitle title="COSMOS"></PageTitle>
-            <h2>About</h2>
+        
+          
+           <div className='text-center mt-5'>
+             <PageTitle title="COSMOS"></PageTitle>
+            <h2 className=' text mt-5'>Account:{walletAddress}</h2>
+
+            <button onClick={connectWallet} className='btn  btn-success mt-3'
+       
+      >
+       Connect Wallet
+      </button>
         </div>
+        
     );
 }
 
